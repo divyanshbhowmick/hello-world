@@ -1,4 +1,4 @@
-var PORT           =         process.env.port || 5000;
+var PORT           =         process.env.PORT || 5000;
 var express        =         require("express");
 var bodyParser     =         require("body-parser");
 var app            =         express();
@@ -16,5 +16,5 @@ app.post('/login',function(req,res){
   res.sendfile("./response.html");
 });
 app.listen(PORT,function(){
-  console.log("Started on PORT 3000");
+  console.log("Started on PORT 5000");
 })
