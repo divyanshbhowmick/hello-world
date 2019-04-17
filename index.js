@@ -1,3 +1,4 @@
+var PORT           =         process.env.port || 5000;
 var express        =         require("express");
 var bodyParser     =         require("body-parser");
 var app            =         express();
@@ -14,6 +15,6 @@ app.post('/login',function(req,res){
   console.log("User name = "+user_name+", password is "+password);
   res.sendfile("./response.html");
 });
-app.listen(3000,function(){
+app.listen(PORT,function(){
   console.log("Started on PORT 3000");
 })
